@@ -49,6 +49,7 @@ const App = () => {
 
     const res = await fetch(`${config.host}/home-owner/${phone_no}`, options);
     const content = await res.json();
+    console.log(content)
     setAccounts(content.accounts);
   }
 
